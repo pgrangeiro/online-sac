@@ -1,0 +1,18 @@
+{% load static %}
+
+<html>
+<head>
+  {% block css %}
+    <link type="text/css" rel="stylesheet" href="{% static "bootstrap/css/bootstrap.min.css" %}">
+    <link type="text/css" rel="stylesheet" href="{% static "css/chat-style.css" %}">
+  {% endblock %}
+
+  {% block script %}
+  <script type="text/javascript" src="{% static "bootstrap/js/bootstrap.min.js" %}"></script>
+  {% endblock %}
+</head>
+<body>
+  {% block content %}
+  {% endblock %}
+</body>
+</html>
